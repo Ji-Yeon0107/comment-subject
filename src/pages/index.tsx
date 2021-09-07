@@ -125,18 +125,20 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', height: '90%' }}>
                 <div style={{ flex: 1 }}>
-                    {nameList.map((name: string, i: number) => (
-                        <LunchValue
-                            key={i}
-                            name={name}
-                            isSelected={selectedName == name}
-                            value={valueList[name]}
-                            valueList={valueList}
-                            setValueList={setValueList}
-                            loading={loading}
-                            setLoading={setLoading}
-                        />
-                    ))}
+                    <div>
+                        {nameList.map((name: string, i: number) => (
+                            <LunchValue
+                                key={i}
+                                name={name}
+                                isSelected={selectedName == name}
+                                value={valueList[name]}
+                                valueList={valueList}
+                                setValueList={setValueList}
+                                loading={loading}
+                                setLoading={setLoading}
+                            />
+                        ))}
+                    </div>
                 </div>
                 <div style={{ flex: 1 }}>
                     <div
@@ -162,6 +164,7 @@ export default function Home() {
                             }원 남음`}</div>
                         </div>
                     </div>
+                
                     <div
                         style={{
                             display: 'flex',
@@ -172,8 +175,9 @@ export default function Home() {
                         }}
                     >{`${new Date().getMonth() + 1}월 : ${getTotalValue(
                         valueList
-                    )}원`}</div>
-                </div>
+                    )}원`}
+                    </div>
+            </div>
             </div>
         </div>
     );
