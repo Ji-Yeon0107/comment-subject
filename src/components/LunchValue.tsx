@@ -1,8 +1,8 @@
 import { query as q } from 'faunadb';
-import { COLLECTION_REF } from '../constant';
-import { imgURLObj } from '../data';
+import { COLLECTION_REF } from '../../../constant';
+import { imgURLObj } from '../../../data';
 
-import db from '../db';
+import db from '../../../db';
 
 type LunchValueProps = {
     name: string;
