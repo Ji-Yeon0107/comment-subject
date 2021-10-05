@@ -24,10 +24,12 @@ export default function Home() {
     const [value, setValue] = useState<any>();
     const [selectedName, setSelectedName] = useState(nameList[0]);
     const [valueList, setValueList] = useState<any>(defaultValueList);
+
     const setValueListFromDB = async () => {
         setLoading(true);
 
         const { data } = await db.query<any>(q.Get(ref));
+
         console.log('data from DB', data);
         setValueList(data);
 

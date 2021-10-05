@@ -1,17 +1,11 @@
 export const imgURLObj: any = {
-    재혁: '/kjh.png',
-    예슬: '/kys.png',
-    수빈: '/psb.png',
-    지연: '/pjy.png',
-    주이: '/yjy.png',
-    정택: '/ejt.png',
+    선희: '/ksh.png',
+    성도: '/lsd.png',
+    영하: '/iyh.png',
 };
 
 export const defaultValueList = {
-    재혁: 0,
-    예슬: 0,
-    수빈: 0,
-    지연: 0,
-    주이: 0,
-    정택: 0,
+    선희: 0,
+    성도: 0,
+    영하: 0,
 };
